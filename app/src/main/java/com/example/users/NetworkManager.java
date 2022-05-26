@@ -1,5 +1,7 @@
 package com.example.users;
 
+import androidx.annotation.NonNull;
+
 import com.example.users.model.User;
 
 import java.io.BufferedReader;
@@ -16,6 +18,7 @@ import org.json.JSONObject;
 
 public class NetworkManager {
 
+    @NonNull
     public static ArrayList<User> getStudentList() throws Exception {
 
         ArrayList<User> result = new ArrayList<User>();
